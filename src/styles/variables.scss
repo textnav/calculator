@@ -1,0 +1,40 @@
+@media (prefers-color-scheme: dark) {
+  html {
+    --primary-hue: 210;
+    --secondary-hue: 25;
+    --tertiary-hue: 125;
+    --comment-color: hsl(var(--secondary-hue), 90%, 65%);
+    --highlight-color: hsla(var(--primary-hue), 20%, 95%, 0.5);
+    --text-color: hsl(var(--primary-hue), 70%, 40%);
+    --number-color: hsl(var(--primary-hue), 50%, 10%);
+    --operator-color: hsl(var(--primary-hue), 50%, 20%);
+    --result-color: hsl(var(--tertiary-hue), 70%, 35%);
+    --hint-color: hsl(var(--secondary-hue), 70%, 45%);
+    --error-color: rgb(240, 50, 50);
+    --background: hsl(var(--primary-hue), 20%, 99%);
+    --line-color: hsla(var(--primary-hue), 20%, 12%, 0.05);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    --primary-hue: 210; /* Blue */
+    --secondary-hue: 25; /* Orange */
+    --tertiary-hue: 125; /* Green */
+
+    --comment-color: hsl(var(--secondary-hue), 90%, 65%);
+    --highlight-color: hsla(var(--primary-hue), 20%, 10%, 0.5);
+    --text-color: hsl(var(--primary-hue), 70%, 60%);
+    --number-color: hsl(var(--primary-hue), 50%, 90%);
+    --operator-color: hsl(var(--primary-hue), 50%, 80%);
+    --result-color: hsl(var(--tertiary-hue), 70%, 45%);
+    --hint-color: hsl(var(--secondary-hue), 70%, 45%);
+    --error-color: rgb(240, 50, 50);
+    --background: hsl(var(--primary-hue), 20%, 12%);
+    --line-color: hsla(var(--primary-hue), 20%, 99%, 0.05);
+  }
+}
+
+html {
+  --line-height: 2.5rem;
+}

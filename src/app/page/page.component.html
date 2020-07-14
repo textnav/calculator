@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="interface">
+    <div class="output" [innerHTML]="output$ | async | safeHtml"></div>
+    <textarea
+      #textarea
+      class="input"
+      id="input"
+      (input)="handleChange()"
+      (keydown)="onkeydown($event)"
+      (click)="onClick()"
+      >{{ expression }}</textarea
+    >
+  </div>
+</div>
