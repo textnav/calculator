@@ -1,0 +1,80 @@
+{
+  "configVersion": 1,
+  "timestamp": 1594739620123,
+  "index": "/calculator/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/calculator/favicon.ico",
+        "/calculator/index.html",
+        "/calculator/main.e439e2090d9967872669.js",
+        "/calculator/manifest.webmanifest",
+        "/calculator/polyfills.a4021de53358bb0fec14.js",
+        "/calculator/runtime.e227d1a0e31cbccbf8ec.js",
+        "/calculator/styles.d1eb80782cb9b2413de3.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/calculator/assets/icons/icon-128x128.png",
+        "/calculator/assets/icons/icon-144x144.png",
+        "/calculator/assets/icons/icon-152x152.png",
+        "/calculator/assets/icons/icon-192x192.png",
+        "/calculator/assets/icons/icon-384x384.png",
+        "/calculator/assets/icons/icon-512x512.png",
+        "/calculator/assets/icons/icon-72x72.png",
+        "/calculator/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/calculator/assets/icons/icon-128x128.png": "52504204b462ae119b29432b5b7bef2e19350b6f",
+    "/calculator/assets/icons/icon-144x144.png": "44eac790ec74b12385a96cdfbaa0369d5124e8c8",
+    "/calculator/assets/icons/icon-152x152.png": "d40d6a4662061c0600facfa09c9e606fb133b764",
+    "/calculator/assets/icons/icon-192x192.png": "3e36322441c74fd34141316f1817fd1e83cb3ad0",
+    "/calculator/assets/icons/icon-384x384.png": "ef22466ba8b6864040fc2bc6d0640627349c6529",
+    "/calculator/assets/icons/icon-512x512.png": "df560990ede23724567df8ab5ff4f2f1754a3ed3",
+    "/calculator/assets/icons/icon-72x72.png": "0b04b77dc6c51556d536282e5ee2b30069deecea",
+    "/calculator/assets/icons/icon-96x96.png": "9ddda5baf5d5a40f75cc960dff1a14518ffba49e",
+    "/calculator/favicon.ico": "a0080d9162fcc5c4217ba7096d9349d45be1f8d0",
+    "/calculator/index.html": "f72feb57e77ef5f35aedd21cc549a4e405d011dc",
+    "/calculator/main.e439e2090d9967872669.js": "c25b2c1b64e59a9f998ec2dda52cc7c5a06d8bf7",
+    "/calculator/manifest.webmanifest": "6ed26d3f59b15cccf54c3636128730bcd909a712",
+    "/calculator/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/calculator/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/calculator/styles.d1eb80782cb9b2413de3.css": "2e7d68886dff2d34503b6fca981c32f0efa350ff"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
