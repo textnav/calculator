@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
     --primary-hue: 210;
     --secondary-hue: 25;
@@ -16,7 +16,7 @@
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   html {
     --primary-hue: 210; /* Blue */
     --secondary-hue: 25; /* Orange */
