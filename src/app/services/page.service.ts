@@ -196,7 +196,7 @@ export class PageService {
           line.parsed = cached.parsed;
           line.compiled = cached.compiled;
           line.result = line.compiled?.evaluate(scope);
-        } catch (e) {
+        } catch (e: any) {
           line.error = e.toString();
         }
       }
@@ -208,7 +208,7 @@ export class PageService {
 
             try {
               line2.result = add(line2.result, line.result);
-            } catch (e) {
+            } catch (e: any) {
               line2.error = e.toString();
             }
           }
