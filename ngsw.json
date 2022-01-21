@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1642732292848,
+  "timestamp": 1642734002016,
   "index": "/calculator/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/calculator/favicon.ico",
         "/calculator/index.html",
-        "/calculator/main.6f65dc1ca7b1397aba24.js",
+        "/calculator/main.f3663d1efbfdd249.js",
         "/calculator/manifest.webmanifest",
-        "/calculator/polyfills.a4021de53358bb0fec14.js",
-        "/calculator/runtime.e227d1a0e31cbccbf8ec.js",
-        "/calculator/styles.d1eb80782cb9b2413de3.css"
+        "/calculator/polyfills.12e20a9a1150ae0d.js",
+        "/calculator/runtime.79eb24188d6851cf.js",
+        "/calculator/styles.c180abba6b999747.css"
       ],
       "patterns": []
     },
@@ -52,12 +52,12 @@
     "/calculator/assets/icons/icon-72x72.png": "0b04b77dc6c51556d536282e5ee2b30069deecea",
     "/calculator/assets/icons/icon-96x96.png": "9ddda5baf5d5a40f75cc960dff1a14518ffba49e",
     "/calculator/favicon.ico": "a0080d9162fcc5c4217ba7096d9349d45be1f8d0",
-    "/calculator/index.html": "6026cd717b5d19bfa732207161a00467d89bc53a",
-    "/calculator/main.6f65dc1ca7b1397aba24.js": "ae4fe4919af6fbdaf28342a1d7e44c52745e99c6",
+    "/calculator/index.html": "ee0f9bbbabfa7b7cf662083f8f81e3222df56fcd",
+    "/calculator/main.f3663d1efbfdd249.js": "1b0b02b077e41b4b5b3396a6fcca43a64a947e78",
     "/calculator/manifest.webmanifest": "6ed26d3f59b15cccf54c3636128730bcd909a712",
-    "/calculator/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
-    "/calculator/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/calculator/styles.d1eb80782cb9b2413de3.css": "2e7d68886dff2d34503b6fca981c32f0efa350ff"
+    "/calculator/polyfills.12e20a9a1150ae0d.js": "c68475b846ebda128adb3ea81aea3a55041cb96e",
+    "/calculator/runtime.79eb24188d6851cf.js": "a93021773422347a9460cac566c116673f24324c",
+    "/calculator/styles.c180abba6b999747.css": "386d54390c704b0be58a8a39f793313c734090b0"
   },
   "navigationUrls": [
     {
@@ -76,5 +76,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }
