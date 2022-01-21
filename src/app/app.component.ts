@@ -11,6 +11,6 @@ export class AppComponent implements OnInit {
   expression = '';
 
   ngOnInit(): void {
-    this.expression = expression;
+    this.expression = localStorage.getItem('input') || expression;
   }
 }
