@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Line, ItemState, Scope } from '../page/page';
-import { round, parse, add } from 'mathjs';
+import {
+  round,
+  parse,
+  add,
+  FunctionAssignmentNode,
+  ConstantNode,
+  AssignmentNode,
+} from 'mathjs';
 import { Subject, asyncScheduler } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 
@@ -75,13 +82,15 @@ export class PageService {
         type = 'result';
       } else if (line.result === undefined) {
         type = 'empty';
-      } else if (line?.parsed?.isFunctionAssignmentNode) {
+      } else if (
+        (line?.parsed as FunctionAssignmentNode)?.isFunctionAssignmentNode
+      ) {
         type = 'empty';
-      } else if (line?.parsed?.isConstantNode) {
+      } else if ((line?.parsed as ConstantNode)?.isConstantNode) {
         type = 'empty';
       } else if (
-        line?.parsed?.isAssignmentNode &&
-        line.parsed.value.isConstantNode
+        (line?.parsed as AssignmentNode)?.isAssignmentNode &&
+        (line?.parsed as ConstantNode)?.value.isConstantNode
       ) {
         type = 'empty';
       } else {
