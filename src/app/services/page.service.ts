@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Line, ItemState, Scope } from '../page/page';
-import { round, parse, add } from 'mathjs';
+import {
+  round,
+  parse,
+  add,
+  FunctionAssignmentNode,
+  ConstantNode,
+  AssignmentNode,
+} from 'mathjs';
 import { Subject, asyncScheduler } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 
@@ -75,13 +82,15 @@ export class PageService {
         type = 'result';
       } else if (line.result === undefined) {
         type = 'empty';
-      } else if (line?.parsed?.isFunctionAssignmentNode) {
+      } else if (
+        (line?.parsed as FunctionAssignmentNode)?.isFunctionAssignmentNode
+      ) {
         type = 'empty';
-      } else if (line?.parsed?.isConstantNode) {
+      } else if ((line?.parsed as ConstantNode)?.isConstantNode) {
         type = 'empty';
       } else if (
-        line?.parsed?.isAssignmentNode &&
-        line.parsed.value.isConstantNode
+        (line?.parsed as AssignmentNode)?.isAssignmentNode &&
+        (line?.parsed as ConstantNode)?.value.isConstantNode
       ) {
         type = 'empty';
       } else {
@@ -196,7 +205,7 @@ export class PageService {
           line.parsed = cached.parsed;
           line.compiled = cached.compiled;
           line.result = line.compiled?.evaluate(scope);
-        } catch (e) {
+        } catch (e: any) {
           line.error = e.toString();
         }
       }
@@ -208,7 +217,7 @@ export class PageService {
 
             try {
               line2.result = add(line2.result, line.result);
-            } catch (e) {
+            } catch (e: any) {
               line2.error = e.toString();
             }
           }

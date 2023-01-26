@@ -31,10 +31,4 @@ export default '# Expressions\n' +
   '# Duplicate line or selection: Ctrl+D\n' +
   '# Change selected number: Up/Down\n' +
   '# Change selected number 10x: Shift+Up/Down\n' +
-  '# Change indent: Tab/Shift+Tab\n' +
-  '\n' +
-  '# Calque on GitHub:\n' +
-  '# https://github.com/grimalschi/calque\n' +
-  '\n' +
-  '# Using Math.js:\n' +
-  '# https://github.com/grimalschi/mathjs"';
+  '# Change indent: Tab/Shift+Tab';
